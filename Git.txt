@@ -1,0 +1,75 @@
+what is the version control system
+Git , subversion , perforce. this all are version control.
+make save point of projects.
+take commit.
+
+git == tool
+github == service 
+
+reposetroy == folder >> git tool watch.
+
+ .git folder >> git repository meta data.
+
+ git init
+ git status
+ git clone link your_foldername/
+ cd ..
+ cd .
+ cd Myproject/
+ Git diff
+
+life cycle if changes::
+working area >> temporary / staging index >> (about to commite) / repository (commited)
+permented >> git commite.
+
+cd MyProgect >> git log //commit
+git log -3 // top 3 commit
+git log -p // with changes 
+git log --oneline // commit id and message
+git log --stat // display file name changes
+git show // what changes in commit
+git diff // file mai kya kya changes huee.
+git add file_name// git file to track // staging area
+
+git commit -m "iit main.cpp"
+
+git restore main.cpp // if maene jo koi bhi changes kiyee hai vo muje nahi karne hei recent commit vali file chaiye to.
+
+under the .gitignore file >> file_name.txt orr *.txt orr desktop/path/myname.txt  // if any file we dont want to track file.
+
+untrend means >> not able to track file. // init mai ayii hi nai hei    
+
+branching , tagging , mergigng :::
+
+git branch >> list of branches
+git branch newone 
+git checkout newone // move to the newone branch
+git checkout -b
+git merge second
+git branch -d second
+git branch
+git checkout 
+git -am
+git checkout second
+git tag // tag a specific commit
+git commit -am "Merge Edite"
+git log
+git tag -d betaV1.0 //delete the tag name
+git stash // 
+git commit --amend // most recent commit name change
+git revert // given commit
+git reset //delete commit.
+git diff HEAD~
+git commit -am "Shaa ID"
+git revert 1233434r25r52544 // revert the commit 
+git reset ,--soft-diff will show an stedge,--hard-local changing discard,--mixed-local show as modification, 1233434r25r52544 // delete the commit
+
+How To Push And Pull ::
+
+git config --global user.name "Lovebabber"
+git config --global user.email "Lovebabbr@gmail.com"
+git config --list
+git push -u origin master // for commit on the our reposetroy
+git remote map local branch to github branch
+password = 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
+git pull
